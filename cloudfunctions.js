@@ -3,17 +3,16 @@ Moralis.Cloud.define("getPrice", async (request) => {
     logger.info(url);
     return Moralis.Cloud.httpRequest({
       url: url,
-      params: {chain: "eth", chain_name: "testnet"},
+      params: {chain: "eth", chain_name: "mainnet"},
       headers:{
         'accept': 'application/json',
         'X-API-Key':'JdATn59n0qYfNyLErdnXcyh52231ZL0CwIXMiFZU'
         }
-    }).then( fucntion(httpResponse){
+    }).then( function(httpResponse){
      return httpResponse.data;
             }, function(httpResponse){
                     logger.info('error');
                     logger.info(httpResponse);
       })
-  });
-            
+  });  
     
