@@ -1,7 +1,7 @@
 // main.js
 
 const serverUrl = "https://mwzauzuvmlfp.usemoralis.com:2053/server";
-const appId = "JdATn59n0qYfNyLErdnXcyh52231ZL0CwIXMiFZU";
+const appId = "#";
 Moralis.start({ serverUrl, appId });
 
 async function getPrice() {
